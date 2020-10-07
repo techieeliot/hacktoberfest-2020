@@ -10,6 +10,9 @@
             background-color: #193D5D;
             color: #ffffff;
             width: 100%;
+            height: 100%;
+            padding: 0; 
+            margin: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -26,6 +29,47 @@
             max-width: 80%;
             height: auto;
         }
+
+        .full-height {
+            height: 100%;
+        }
+        
+        .footer {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .footer-item {
+            width: 65%;
+            font-size: 12px;
+        }
+
+        .footer-item a {
+            color: #ff8ae2;
+        }
+
+        @media only screen and (min-width: 29.8125rem /* 477px */) {
+            .footer {
+                flex-direction: row;
+            }
+
+            .footer-item {
+                width: 40%;
+            }
+        }
+
+        @media only screen and (min-width: 77.5rem /* 1240px */) {
+            .footer {
+                flex-direction: row;
+            }
+
+            .footer-item {
+                width: 30%;
+            }
+        }
+        
     </style>
 </head>
 <body>
@@ -34,5 +78,24 @@
         <p>Today we're learning git and GitHub</p>
         <img src="./assets/HF-full-logo-b05d5eb32b3f3ecc9b2240526104cf4da3187b8b61963dd9042fdc2536e4a76c.svg" alt="hacktoberfest 2020 logo" class="fest_img">
     </header>
+
+    <div class="full-height">
+        
+    </div>
+
+    <footer>
+        <section class="footer">
+            <div class="footer-item">
+                <p>Copyright &copy; 2020. freeCodeCamp Jackson, MS All Rights Reserved.</p>
+            </div>
+            <div class="footer-item">
+                <p>See the 
+                    <a href="https://www.meetup.com/freeCodeCamp-Jackson-Mississippi-Meetup-Group/">
+                        freeCodeCamp Jackson, MS Meetup Page
+                    </a>
+                </p>
+            </div>
+        </section>
+      </footer>
 </body>
 </html>
